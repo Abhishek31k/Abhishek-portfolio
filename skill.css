@@ -10,7 +10,7 @@ body{
   }
 
   @font-face{
-    
+    font-family: "Lovely Home";
     src:local('Lovely Home'), 
     url("Image/LovelyHome-9aBZ.ttf") format('truetype');
 
@@ -27,7 +27,7 @@ body{
 
   @media only screen and (max-width : 764px){
       .brand-name ,.navbar-light .navbar-brand{
-      font-family: "Lovely Home";
+      
       font-size: 40px;
       font-weight: bold;
       color: #351458;
@@ -49,11 +49,13 @@ body{
     padding: 4% 0 3%;
   }
 
-.skill-img{
-    width:100%;
-    height: 100%;
+  .skill-img {
+    /* padding-top: 5px; */
+    margin-top: 43px;
+    width: 100%;
+    height: 26rem;
+    border-radius: 25px;
 }
-
 .Skill-heading{
     font-family: "Montserrat";
     font-size: 40px;
@@ -64,7 +66,7 @@ body{
     width: 95%;
     height: auto;
     margin: 40px auto;
-    background-color: #fff;
+    background-color: #920e5b;
 
     /* border: 1px solid #cdcdcd; */
     padding: 10px;
@@ -82,11 +84,11 @@ body{
 }
 .SkillBar {
     width: 90%;
-    height: 50px;
+    height: 42px;
     position: relative;
-    border-radius:20px;
+    border-radius: 20px;
     /* background: rgba(17, 17, 17, .3); */
-    background: #c5c2ff;
+    background: #ffffff;
     margin: 20px auto;
 }
 
@@ -98,7 +100,7 @@ body{
     -webkit-animation: Animate-HTML 4s;
     -moz-animation: Animate-HTML 4s;
     -o-animation: Animate-HTML 4s;
-    height: 50px;
+    height: 42px;
     position: absolute;
     background-color:#0eaa28;
 }
@@ -133,7 +135,7 @@ to {
     -o-animation: Animate-CSS 5s;
     border-radius:20px;
     width: 70%;
-    height: 50px;
+    height: 42px;
     position: absolute;
     background-color: #448bc5;
 }
@@ -168,7 +170,7 @@ to {
     -moz-animation: Animate-Python 5s;
     -o-animation: Animate-Python 5s;
     width: 25%;
-    height: 50px;
+    height: 42px;
     position: absolute;
     background-color: #e449a3;
 }
@@ -202,10 +204,10 @@ to {
     -moz-animation: Animate-JS 4s;
     -o-animation: Animate-JS 4s;
     border-radius:20px;
-    width: 5%;
-    height: 50px;
+    
+    height: 42px;
     position: absolute;
-    background-color: #c71c1c;
+    background-color: #d7e60b;
 }
 @keyframes Animate-JS {
     from {
@@ -240,7 +242,7 @@ to {
     -o-animation: Animate-C 4s;
     border-radius:20px;
     width: 8%;
-    height: 50px;
+    height: 42px;
     position: absolute;
     background-color: #6c63ff;
 }
@@ -344,9 +346,10 @@ to {
     float: left;
     /* position: absolute; */
     margin-top: 8px;
-    margin-left: 15px;
+    margin-left: 8px;
     text-shadow: none;
     color: #fff;
+    height: 25px;
 }
 
 
@@ -356,6 +359,13 @@ to {
       text-align: center;
       font-size: 16px;
       line-height: normal;
+    }
+    .skill-img {
+        /* padding-top: 5px; */
+        margin-top: 23px;
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
     }
 }
 
