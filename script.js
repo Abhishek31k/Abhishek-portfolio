@@ -1,22 +1,36 @@
-function myFunction(icon) {
-  icon.classList.toggle("change");
-  var nav = document.getElementById("menu-list");
-  if (nav.style.display === "flex") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "flex";
-  }
-}
-function bodyclose() {
-  var x = document.getElementById("menu-list");
-  if (x.style.display == "flex") {
-    var y = document.getElementById("vzulr");
+// scroll to top functionality
+const scrollUp = document.querySelector("#scroll-up");
 
-    y.classList.toggle("change");
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
-    x.style.display = "none";
-  }
-}
+// Nav hamburgerburger selections
+
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+
+burger.addEventListener("click", () => {
+    ul.classList.toggle("show");
+  });
+
+  // Close hamburger menu when a link is clicked
+
+// Select nav links
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.querySelector(".text");
   const phrases = ["I am developer", "I am a designer", "Coder", "Gamer"];
@@ -52,21 +66,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   setTimeout(type, delayBetweenPhrases);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".testimonial-slide");
-  const indicators = document.querySelectorAll(".indicator");
-  let currentIndex = 0;
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle("active", i === index);
-      indicators[i].classList.toggle("active", i === index);
-    });
-  }
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
-  showSlide(currentIndex);
 });
