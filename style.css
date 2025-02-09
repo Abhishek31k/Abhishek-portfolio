@@ -401,7 +401,7 @@ td:first-child {
   margin: auto;
   text-align: center;
   margin-top: 3.5px;
-  box-shadow: inset -5px 2px 20px 1px #2f55d1;
+ 
 }
 
 .skill-header {
@@ -420,7 +420,7 @@ td:first-child {
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+
   padding: 20px;
   margin: 10px;
 }
@@ -439,7 +439,7 @@ td:first-child {
   text-align: center;
   margin-top: 3.5px;
   border: none;
-  box-shadow: inset -5px 2px 20px 1px #21c3dd;
+
 }
 
 .projects {
@@ -521,7 +521,7 @@ td:first-child {
 /*contact*/
 .contact {
   margin-top: 3.5px;
-  box-shadow: inset -5px 2px 20px 1px #db0c0c;
+
   height: 35rem;
 }
 
@@ -535,7 +535,7 @@ td:first-child {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+
 }
 
 .contact-form-container label {
@@ -614,7 +614,7 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 3.5px;
-  box-shadow: inset -5px 2px 20px 1px #17acda;
+
 }
 
 /*scroll*/
